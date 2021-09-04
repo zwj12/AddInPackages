@@ -1,0 +1,11 @@
+<Version>
+  <Major>1</Major>
+  <Minor>0</Minor>
+  <Build>0</Build>
+  <Revision>17</Revision>
+  <VersionName>1.0.17</VersionName>
+  <Title>Ebara</Title>
+  <Description>Ebara AddIn</Description>
+  <Date>2019-06-05</Date>
+  <Type>AdditionalOption</Type>
+</Version>

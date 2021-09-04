@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductManifest version="1.1">
+  <Product id="open.jyweld.zhongxun" name="ZhongXun" version="1.00.0000.02" versionName="1.0.02" creationDate="2021-09-04" publisher="JYWeld" type="AddIn" copyright="Copyright 2021 JYWeld. All rights reserved." companyUrl="www.shzhongxun.com">
+    <Description>ZhongXun AddIn</Description>
+  </Product>
+  <Categories>
+    <Category displayName="ZhongXun" type="system">
+      <Groups>
+        <Group displayName="Weld">
+          <FeatureRef id="open.jyweld.zhongxun.weld" />
+        </Group>
+      </Groups>
+    </Category>
+  </Categories>
+  <Features>
+    <Feature id="open.jyweld.zhongxun.weld" displayName="SHIPBUILDING" requiresLicense="false" type="system">
+      <FeatureData>
+        <KeyValue id="SHIPBUILDING" key="SHIPBUILDINGKey" />
+      </FeatureData>
+    </Feature>
+  </Features>
+  <Rules>
+    <Dependencies />
+    <Conflicts />
+  </Rules>
+  <Packages>
+    <FeatureRef id="open.jyweld.zhongxun.weld">
+      <Package id="open.jyweld.zhongxun_1.00.0000.02.rpk" platform="vc;rc;rcsim" />
+    </FeatureRef>
+  </Packages>
+</ProductManifest>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductManifest version="1.1">
+  <Product id="open.intelligentlaser.opticaltracking" name="ILOpticalTracking" version="1.00.0000.00" versionName="1.0" creationDate="2019-03-25" publisher="Intelligent Laser" type="AddIn" copyright="Copyright 2019 Intelligent Laser. All rights reserved." companyUrl="http://www.intelligentlaser.cn/">
+    <Description>ILOpticalTracking AddIn</Description>
+    <Dependency id="abb.robotics.robotware" name="RobotWare" publisher="ABB" versionMin="6.06.1025.00" versionMax="" platform="vc;rc;rcsim" type="RobotWare" />
+  </Product>
+  <Categories>
+    <Category displayName="Intelligent Laser" type="robot">
+      <Groups>
+        <Group displayName="Optical Sensor">
+          <FeatureRef id="open.intelligentlaser.opticaltracking.ilhsp" />
+          <FeatureRef id="open.intelligentlaser.opticaltracking.il150" />
+          <FeatureRef id="open.intelligentlaser.opticaltracking.samplecode" />
+        </Group>
+      </Groups>
+    </Category>
+  </Categories>
+  <Features>
+    <Feature id="open.intelligentlaser.opticaltracking.ilhsp" displayName="ILHSP" requiresLicense="false" type="robot" minInstances="1" maxInstances="2">
+      <FeatureData>
+        <KeyValue id="ILHSP" key="ILHSPKey" />
+      </FeatureData>
+    </Feature>
+    <Feature id="open.intelligentlaser.opticaltracking.il150" displayName="IL150" requiresLicense="false" type="robot" minInstances="1" maxInstances="2">
+      <FeatureData>
+        <KeyValue id="IL150" key="IL150Key" />
+      </FeatureData>
+    </Feature>
+    <Feature id="open.intelligentlaser.opticaltracking.samplecode" displayName="Sample Code" requiresLicense="false" type="robot" minInstances="1" maxInstances="2">
+      <FeatureData>
+        <KeyValue id="SampleCode{{instance}}" key="SampleCodeKey" />
+      </FeatureData>
+    </Feature>
+  </Features>
+  <Rules>
+    <Dependencies>
+      <FeatureRef id="open.intelligentlaser.opticaltracking.ilhsp">
+        <FeatureRef id="abb.robotics.robotware.applications.arc.opticaltracking" />
+      </FeatureRef>
+      <FeatureRef id="open.intelligentlaser.opticaltracking.ilhsp">
+        <Or>
+          <FeatureRef id="abb.robotics.robotware.options.continuousapplicationplatform.opticaltracking" />
+        </Or>
+      </FeatureRef>
+      <FeatureRef id="open.intelligentlaser.opticaltracking.il150">
+        <FeatureRef id="abb.robotics.robotware.applications.arc.opticaltracking" />
+      </FeatureRef>
+      <FeatureRef id="open.intelligentlaser.opticaltracking.il150">
+        <Or>
+          <FeatureRef id="abb.robotics.robotware.options.continuousapplicationplatform.opticaltracking" />
+        </Or>
+      </FeatureRef>
+      <FeatureRef id="open.intelligentlaser.opticaltracking.samplecode">
+        <FeatureRef id="abb.robotics.robotware.applications.arc.opticaltracking" />
+      </FeatureRef>
+    </Dependencies>
+    <Conflicts>
+      <Conflict>
+        <FeatureRef id="open.intelligentlaser.opticaltracking.ilhsp" />
+        <FeatureRef id="open.intelligentlaser.opticaltracking.il150" />
+      </Conflict>
+    </Conflicts>
+  </Rules>
+  <Packages>
+    <FeatureRef id="open.intelligentlaser.opticaltracking.ilhsp">
+      <Package id="open.intelligentlaser.opticaltracking_1.00.0000.00.rpk" platform="vc;rc;rcsim" digest="131BD44069485B019FE1BC7FEBD12BBB8E05FBE2" />
+    </FeatureRef>
+    <FeatureRef id="open.intelligentlaser.opticaltracking.il150">
+      <Package id="open.intelligentlaser.opticaltracking_1.00.0000.00.rpk" platform="vc;rc;rcsim" digest="131BD44069485B019FE1BC7FEBD12BBB8E05FBE2" />
+    </FeatureRef>
+    <FeatureRef id="open.intelligentlaser.opticaltracking.samplecode">
+      <Package id="open.intelligentlaser.opticaltracking_1.00.0000.00.rpk" platform="vc;rc;rcsim" digest="131BD44069485B019FE1BC7FEBD12BBB8E05FBE2" />
+    </FeatureRef>
+  </Packages>
+</ProductManifest>

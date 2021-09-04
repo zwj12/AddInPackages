@@ -1,0 +1,19 @@
+#This is the text file of LaserCutting PLC of Production Manager
+Weld_TXRES::
+# Start the activity
+1:
+The robot of weld is not running
+2:
+The robot of weld is not ready
+3:
+The robot of weld is in error state : 
+4:
+The current PLC code number of weld is not equal to 0 : 
+5:
+The PLC code of weld is not set correctly : 
+6:
+The RunAck signal of weld is not received
+7:
+The part routine of weld is running
+8:
+The setup or service routine of weld is running

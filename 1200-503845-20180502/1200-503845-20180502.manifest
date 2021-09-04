@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductManifest version="1.1">
+  <Product id="open.abb.twoaxisgantry" name="TwoAxisGantry" version="1.00.0000.00" versionName="1.0" creationDate="2018-05-03" publisher="ABB WAC" type="AddIn" copyright="Copyright 2018 ABB WAC. All rights reserved." companyUrl="www.abb.com">
+    <Description>TwoAxisGantry AddIn</Description>
+  </Product>
+  <Categories>
+    <Category displayName="New category" type="system">
+      <Groups>
+        <Group displayName="New Group">
+          <FeatureRef id="open.abb.twoaxisgantry.1.0.0" />
+        </Group>
+      </Groups>
+    </Category>
+  </Categories>
+  <Features>
+    <Feature id="open.abb.twoaxisgantry.1.0.0" displayName="TwoAxisGantryOption" requiresLicense="false" type="system">
+      <FeatureData>
+        <KeyValue id="10000" key="5" />
+      </FeatureData>
+    </Feature>
+  </Features>
+  <Rules>
+    <Dependencies />
+    <Conflicts />
+  </Rules>
+  <Packages>
+    <FeatureRef id="open.abb.twoaxisgantry.1.0.0">
+      <Package id="open.abb.twoaxisgantry_1.00.0000.00.rpk" platform="vc;rc;rcsim" digest="8B071BC5AD474F539329105A3344E6431B7A35E7" />
+    </FeatureRef>
+  </Packages>
+</ProductManifest>

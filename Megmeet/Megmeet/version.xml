@@ -1,0 +1,11 @@
+<Version>
+  <Major>1</Major>
+  <Minor>0</Minor>
+  <Build>0</Build>
+  <Revision>2</Revision>
+  <VersionName>1.0.02</VersionName>
+  <Title>Megmeet</Title>
+  <Description>Megmeet AddIn</Description>
+  <Date>2020-05-27</Date>
+  <Type>AdditionalOption</Type>
+</Version>

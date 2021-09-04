@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductManifest version="1.1">
+  <Product id="open.abb.rehm" name="REHM" version="1.00.0000.16" versionName="1.0.16" creationDate="2021-01-05" publisher="ABB" type="AddIn" copyright="Copyright 2020 ABB. All rights reserved." companyUrl="www.abb.com">
+    <Description>REHM AddIn</Description>
+  </Product>
+  <Categories>
+    <Category displayName="REHM" type="robot">
+      <Groups>
+        <Group displayName="Welder">
+          <FeatureRef id="open.abb.rehm.devicenet" />
+          <FeatureRef id="open.abb.rehm.profinet" />
+          <FeatureRef id="open.abb.rehm.ethernetip" />
+        </Group>
+      </Groups>
+    </Category>
+  </Categories>
+  <Features>
+    <Feature id="open.abb.rehm.devicenet" displayName="DeviceNet" requiresLicense="false" type="robot" minInstances="1" maxInstances="1">
+      <FeatureData>
+        <KeyValue id="REHMDEVICENET" key="REHMDEVICENETKEY" />
+      </FeatureData>
+    </Feature>
+    <Feature id="open.abb.rehm.profinet" displayName="PORFINET" requiresLicense="false" type="robot" minInstances="1" maxInstances="1">
+      <FeatureData>
+        <KeyValue id="REHMPROFINET" key="REHMPROFINETKEY" />
+      </FeatureData>
+    </Feature>
+    <Feature id="open.abb.rehm.ethernetip" displayName="EtherNetIP" requiresLicense="false" type="robot" minInstances="1" maxInstances="1">
+      <FeatureData>
+        <KeyValue id="REHMETHERNETIP" key="REHMETHERNETIPKEY" />
+      </FeatureData>
+    </Feature>
+  </Features>
+  <Rules>
+    <Dependencies />
+    <Conflicts>
+      <Conflict>
+        <FeatureRef id="open.abb.rehm.devicenet" />
+        <FeatureRef id="open.abb.rehm.profinet" />
+        <FeatureRef id="open.abb.rehm.ethernetip" />
+      </Conflict>
+    </Conflicts>
+  </Rules>
+  <Packages>
+    <FeatureRef id="open.abb.rehm.devicenet">
+      <Package id="open.abb.rehm_1.00.0000.16.rpk" platform="vc;rc;rcsim" />
+    </FeatureRef>
+    <FeatureRef id="open.abb.rehm.profinet">
+      <Package id="open.abb.rehm_1.00.0000.16.rpk" platform="vc;rc;rcsim" />
+    </FeatureRef>
+    <FeatureRef id="open.abb.rehm.ethernetip">
+      <Package id="open.abb.rehm_1.00.0000.16.rpk" platform="vc;rc;rcsim" />
+    </FeatureRef>
+  </Packages>
+</ProductManifest>

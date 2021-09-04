@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductManifest version="1.1">
+  <Product id="open.abbrobotics.megmeet" name="Megmeet" version="1.00.0000.02" versionName="1.0.02" creationDate="2020-05-27" publisher="MEGMEET" type="AddIn" copyright="Copyright 2020 MEGMEET. All rights reserved." companyUrl="www.megmeet.com">
+    <Description>Megmeet AddIn</Description>
+    <Dependency id="abb.robotics.robotware" name="RobotWare" publisher="ABB" versionMin="6.10.2033" versionMax="6.10.2033" platform="vc;rc;rcsim" type="RobotWare" />
+  </Product>
+  <Categories>
+    <Category displayName="MEGMEET" type="robot">
+      <Groups>
+        <Group displayName="Welder">
+          <FeatureRef id="open.abbrobotics.megmeet.artsenplus">
+            <Groups>
+              <Group displayName="Fieldbus">
+                <FeatureRef id="open.abbrobotics.megmeet.artsenplus.devicenet" />
+              </Group>
+            </Groups>
+          </FeatureRef>
+        </Group>
+      </Groups>
+    </Category>
+  </Categories>
+  <Features>
+    <Feature id="open.abbrobotics.megmeet.artsenplus" displayName="ArtsenPlus" requiresLicense="false" type="robot" minInstances="1" maxInstances="1">
+      <FeatureData>
+        <KeyValue id="ArtsenPlus" key="ArtsenPlusKey" />
+      </FeatureData>
+    </Feature>
+    <Feature id="open.abbrobotics.megmeet.artsenplus.devicenet" displayName="DeviceNet" requiresLicense="false" type="robot" minInstances="1" maxInstances="1">
+      <FeatureData>
+        <KeyValue id="ArtsenPlusDeviceNet" key="ArtsenPlusDeviceNetKey" />
+      </FeatureData>
+    </Feature>
+  </Features>
+  <Rules>
+    <Dependencies>
+      <FeatureRef id="open.abbrobotics.megmeet.artsenplus">
+        <FeatureRef id="abb.robotics.robotware.applications.arc.powersource.standardiowelder" />
+      </FeatureRef>
+    </Dependencies>
+    <Conflicts />
+  </Rules>
+  <Packages>
+    <FeatureRef id="open.abbrobotics.megmeet.artsenplus">
+      <Package id="open.abbrobotics.megmeet_1.00.0000.02.rpk" platform="vc;rc;rcsim" digest="1C75C8FA9ED5F1DD1A0A463C5D9D9D79F90BB106" />
+    </FeatureRef>
+    <FeatureRef id="open.abbrobotics.megmeet.artsenplus.devicenet">
+      <Package id="open.abbrobotics.megmeet_1.00.0000.02.rpk" platform="vc;rc;rcsim" digest="1C75C8FA9ED5F1DD1A0A463C5D9D9D79F90BB106" />
+    </FeatureRef>
+  </Packages>
+</ProductManifest>

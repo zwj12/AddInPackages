@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductManifest version="1.1">
+  <Product id="open.abb.ebara" name="Ebara" version="1.00.0000.17" versionName="1.0.17" creationDate="2019-06-05" publisher="ABB" type="AddIn" copyright="Copyright 2018 ABB. All rights reserved." companyUrl="http://www.abb.com">
+    <Description>Ebara AddIn</Description>
+  </Product>
+  <Categories />
+  <Features>
+    <Feature id="open.abb.ebara.ebara" displayName="Ebara" requiresLicense="false" type="system" />
+  </Features>
+  <Rules>
+    <Dependencies />
+    <Conflicts />
+  </Rules>
+  <Packages>
+    <FeatureRef id="open.abb.ebara.ebara">
+      <Package id="open.abb.ebara_1.00.0000.17.rpk" platform="vc;rc;rcsim" />
+    </FeatureRef>
+  </Packages>
+</ProductManifest>

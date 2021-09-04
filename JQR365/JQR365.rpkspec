@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rpk_spec version="1.0">
+  <metadata>
+    <id>open.abb.jqr365</id>
+    <description>JQR365 AddIn</description>
+    <publisher>JQR365</publisher>
+    <url>http://www.jqr365.cn/</url>
+    <publish_date>2019-09-02</publish_date>
+    <version>1.00.0000.19</version>
+  </metadata>
+  <res>
+    <payload id="open.abb.jqr365">
+      <type>basic</type>
+      <platforms>
+        <platform>rc</platform>
+        <platform>vc</platform>
+      </platforms>
+      <files>
+        <file dest="JQR365_1.00.0000.19\config\EIO_DONSUN.cfg" src=".\Source\config\EIO_DONSUN.cfg" />
+        <file dest="JQR365_1.00.0000.19\config\MMC_DONSUN.cfg" src=".\Source\config\MMC_DONSUN.cfg" />
+        <file dest="JQR365_1.00.0000.19\config\PROC_DONSUN.cfg" src=".\Source\config\PROC_DONSUN.cfg" />
+        <file dest="JQR365_1.00.0000.19\config\ProductionSetup_JQR365.xml" src=".\Source\config\ProductionSetup_JQR365.xml" />
+        <file dest="JQR365_1.00.0000.19\config\SYS_DONSUN.cfg" src=".\Source\config\SYS_DONSUN.cfg" />
+        <file dest="JQR365_1.00.0000.19\config\SYS_DONSUN_JQR365.cfg" src=".\Source\config\SYS_DONSUN_JQR365.cfg" />
+        <file dest="JQR365_1.00.0000.19\language\en\elogtext.xml" src=".\Source\language\en\elogtext.xml" />
+        <file dest="JQR365_1.00.0000.19\language\en\elogtitles.xml" src=".\Source\language\en\elogtitles.xml" />
+        <file dest="JQR365_1.00.0000.19\language\zh\tps\TpsViewJQR365Texts.resources.dll" src=".\Source\language\zh\tps\TpsViewJQR365Texts.resources.dll" />
+        <file dest="JQR365_1.00.0000.19\RAPID\CalibDataModule.mod" src=".\Source\RAPID\CalibDataModule.mod" />
+        <file dest="JQR365_1.00.0000.19\RAPID\MainModule.MOD" src=".\Source\RAPID\MainModule.MOD" />
+        <file dest="JQR365_1.00.0000.19\RAPID\SmarTacTestModule.mod" src=".\Source\RAPID\SmarTacTestModule.mod" />
+        <file dest="JQR365_1.00.0000.19\RAPID\WeldTestModule.mod" src=".\Source\RAPID\WeldTestModule.mod" />
+        <file dest="JQR365_1.00.0000.19\RAPID\JQR365WeldDataModule.SYS" src=".\Source\RAPID\JQR365WeldDataModule.SYS" />
+        <file dest="JQR365_1.00.0000.19\tps\icon_jqr365.png" src=".\Source\tps\icon_jqr365.png" />
+        <file dest="JQR365_1.00.0000.19\tps\TpsViewJQR365.dll" src=".\Source\tps\TpsViewJQR365.dll" />
+        <file dest="JQR365_1.00.0000.19\tps\TpsViewJQR365Texts.dll" src=".\Source\tps\TpsViewJQR365Texts.dll" />
+        <file dest="JQR365_1.00.0000.19\version.xml" src=".\JQR365\version.xml" />
+        <file dest="JQR365_1.00.0000.19\install.cmd" src=".\Source\install.cmd" />
+      </files>
+    </payload>
+  </res>
+</rpk_spec>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductManifest version="1.1">
+  <Product id="open.abb.jqr365" name="JQR365" version="1.00.0000.19" versionName="1.0.19" creationDate="2019-09-02" publisher="JQR365" type="AddIn" copyright="Copyright 2019 JQR365. All rights reserved." companyUrl="http://www.jqr365.cn/">
+    <Description>JQR365 AddIn</Description>
+    <Dependency id="abb.robotics.robotware" name="RobotWare" publisher="ABB" versionMin="6.05.0129.00" versionMax="" platform="vc;rc;rcsim" type="RobotWare" />
+  </Product>
+  <Categories>
+    <Category displayName="JQR365" type="robot">
+      <Groups>
+        <Group displayName="Welder">
+          <FeatureRef id="open.abb.jqr365.weldutility" />
+        </Group>
+      </Groups>
+    </Category>
+  </Categories>
+  <Features>
+    <Feature id="open.abb.jqr365.weldutility" displayName="DONSUN" requiresLicense="false" type="robot" minInstances="1" maxInstances="1">
+      <FeatureData>
+        <KeyValue id="DONSUN" key="DONSUNKey" />
+      </FeatureData>
+    </Feature>
+  </Features>
+  <Rules>
+    <Dependencies>
+      <FeatureRef id="open.abb.jqr365.weldutility">
+        <FeatureRef id="abb.robotics.robotware.applications.arc.powersource.standardiowelder" />
+      </FeatureRef>
+    </Dependencies>
+    <Conflicts />
+  </Rules>
+  <Packages>
+    <FeatureRef id="open.abb.jqr365.weldutility">
+      <Package id="open.abb.jqr365_1.00.0000.19.rpk" platform="vc;rc;rcsim" digest="2C8860A1C452AFDC97108D7D0B23138F12C9CC5A" />
+    </FeatureRef>
+  </Packages>
+</ProductManifest>

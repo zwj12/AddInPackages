@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rpk_spec version="1.0">
+  <metadata>
+    <id>open.abbrobotics.megmeet</id>
+    <description>Megmeet AddIn</description>
+    <publisher>MEGMEET</publisher>
+    <url>www.megmeet.com</url>
+    <publish_date>2020-05-27</publish_date>
+    <version>1.00.0000.02</version>
+  </metadata>
+  <res>
+    <payload id="open.abbrobotics.megmeet">
+      <type>basic</type>
+      <platforms>
+        <platform>rc</platform>
+        <platform>vc</platform>
+      </platforms>
+      <files>
+        <file dest="Megmeet_1.00.0000.02\config\EIO_Megmeet.cfg" src=".\Source\config\EIO_Megmeet.cfg" />
+        <file dest="Megmeet_1.00.0000.02\config\MMC_Megmeet.cfg" src=".\Source\config\MMC_Megmeet.cfg" />
+        <file dest="Megmeet_1.00.0000.02\config\MOC.cfg" src=".\Source\config\MOC.cfg" />
+        <file dest="Megmeet_1.00.0000.02\config\PROC_Megmeet.cfg" src=".\Source\config\PROC_Megmeet.cfg" />
+        <file dest="Megmeet_1.00.0000.02\config\SYS.cfg" src=".\Source\config\SYS.cfg" />
+        <file dest="Megmeet_1.00.0000.02\config\SYS_Megmeet.cfg" src=".\Source\config\SYS_Megmeet.cfg" />
+        <file dest="Megmeet_1.00.0000.02\RAPID\CalibDataModule.mod" src=".\Source\RAPID\CalibDataModule.mod" />
+        <file dest="Megmeet_1.00.0000.02\RAPID\MainModule.mod" src=".\Source\RAPID\MainModule.mod" />
+        <file dest="Megmeet_1.00.0000.02\RAPID\SmarTacTestModule.mod" src=".\Source\RAPID\SmarTacTestModule.mod" />
+        <file dest="Megmeet_1.00.0000.02\RAPID\WeldTestModule.mod" src=".\Source\RAPID\WeldTestModule.mod" />
+        <file dest="Megmeet_1.00.0000.02\install.cmd" src=".\Source\install.cmd" />
+        <file dest="Megmeet_1.00.0000.02\version.xml" src=".\Megmeet\version.xml" />
+      </files>
+    </payload>
+  </res>
+</rpk_spec>

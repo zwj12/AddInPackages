@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rpk_spec version="1.0">
+  <metadata>
+    <id>open.abb.rehm</id>
+    <description>REHM AddIn</description>
+    <publisher>ABB</publisher>
+    <url>www.abb.com</url>
+    <publish_date>2021-01-05</publish_date>
+    <version>1.00.0000.16</version>
+  </metadata>
+  <res>
+    <payload id="open.abb.rehm">
+      <type>basic</type>
+      <platforms>
+        <platform>rc</platform>
+        <platform>vc</platform>
+      </platforms>
+      <files>
+        <file dest="REHM_1.00.0000.16\RAPID\TASK5\PROGMOD\LoggingModule.mod" src=".\Source\RAPID\TASK5\PROGMOD\LoggingModule.mod" />
+        <file dest="REHM_1.00.0000.16\RAPID\TASK5\PROGMOD\MainModule.mod" src=".\Source\RAPID\TASK5\PROGMOD\MainModule.mod" />
+        <file dest="REHM_1.00.0000.16\RAPID\TASK5\PROGMOD\REHMProcessControlModule.mod" src=".\Source\RAPID\TASK5\PROGMOD\REHMProcessControlModule.mod" />
+        <file dest="REHM_1.00.0000.16\config\EIO_REHM.cfg" src=".\Source\config\EIO_REHM.cfg" />
+        <file dest="REHM_1.00.0000.16\config\MMC_REHM.cfg" src=".\Source\config\MMC_REHM.cfg" />
+        <file dest="REHM_1.00.0000.16\config\PROC_REHM.cfg" src=".\Source\config\PROC_REHM.cfg" />
+        <file dest="REHM_1.00.0000.16\config\SYS_REHM.cfg" src=".\Source\config\SYS_REHM.cfg" />
+        <file dest="REHM_1.00.0000.16\config\EIO_REHM_DeviceNet.cfg" src=".\Source\config\EIO_REHM_DeviceNet.cfg" />
+        <file dest="REHM_1.00.0000.16\config\IPPNIO.xml" src=".\Source\config\IPPNIO.xml" />
+        <file dest="REHM_1.00.0000.16\config\EIO_REHM_PROFINET.cfg" src=".\Source\config\EIO_REHM_PROFINET.cfg" />
+        <file dest="REHM_1.00.0000.16\config\EIO_REHM_EtherNetIP.cfg" src=".\Source\config\EIO_REHM_EtherNetIP.cfg" />
+        <file dest="REHM_1.00.0000.16\config\PROC_REHM_SmarTac.cfg" src=".\Source\config\PROC_REHM_SmarTac.cfg" />
+        <file dest="REHM_1.00.0000.16\install.cmd" src=".\Source\install.cmd" />
+      </files>
+    </payload>
+  </res>
+</rpk_spec>

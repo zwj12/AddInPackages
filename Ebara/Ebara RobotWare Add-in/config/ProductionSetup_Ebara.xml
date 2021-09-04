@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Grid="false" Separator="true">
+  <Apps>
+    <App>
+      <Name>Ebara App</Name>
+      <SystemApp>false</SystemApp>
+      <Index>13</Index>
+      <Assembly>TpsViewScreenMaker_Ebara.dll</Assembly>
+      <Type>ScreenMaker_Ebara.Main</Type>
+      <Image>tpu-operator32.png</Image>
+      <AlertSignal />
+      <ErrorSignal />
+      <InData />
+    </App>
+    <App>
+      <Name>Ebara V2</Name>
+      <SystemApp>true</SystemApp>
+      <Index>15</Index>
+      <Assembly>TpsViewEbaraV2.dll</Assembly>
+      <Type>TpsViewEbaraV2NameSpace.TpsViewEbaraV2</Type>
+      <Image>tpu-operator32.png</Image>
+      <AlertSignal />
+      <ErrorSignal />
+      <InData />
+    </App>
+   </Apps>
+  <Widgets>
+  </Widgets>
+  <WidgetPages>
+    <Page>Page 1</Page>
+    <Page>Page 2</Page>
+    <Page>Page 3</Page>
+  </WidgetPages>
+</ProjectSettings>

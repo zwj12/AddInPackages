@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rpk_spec version="1.0">
+  <metadata>
+    <id>open.abb.twoaxisgantry</id>
+    <description>TwoAxisGantry AddIn</description>
+    <publisher>ABB WAC</publisher>
+    <url>www.abb.com</url>
+    <publish_date>2018-05-03</publish_date>
+    <version>1.00.0000.00</version>
+  </metadata>
+  <res>
+    <payload id="open.abb.twoaxisgantry">
+      <type>basic</type>
+      <platforms>
+        <platform>rc</platform>
+        <platform>vc</platform>
+      </platforms>
+      <files>
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\BullsEye\BE_User.sys" src=".\1200-503845-20180502\RAPID\T_ROB1\BullsEye\BE_User.sys" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\TCSupport\tcbase.sys" src=".\1200-503845-20180502\RAPID\T_ROB1\TCSupport\tcbase.sys" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\TCSupport\TCDEFINE.sys" src=".\1200-503845-20180502\RAPID\T_ROB1\TCSupport\TCDEFINE.sys" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\TCSupport\tcdevice.sys" src=".\1200-503845-20180502\RAPID\T_ROB1\TCSupport\tcdevice.sys" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\TCSupport\tcuser.sys" src=".\1200-503845-20180502\RAPID\T_ROB1\TCSupport\tcuser.sys" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\CalibDataModule.mod" src=".\1200-503845-20180502\RAPID\T_ROB1\CalibDataModule.mod" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\DataModule.mod" src=".\1200-503845-20180502\RAPID\T_ROB1\DataModule.mod" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\LogModule.mod" src=".\1200-503845-20180502\RAPID\T_ROB1\LogModule.mod" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\MainModule.mod" src=".\1200-503845-20180502\RAPID\T_ROB1\MainModule.mod" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\SmarTacTestModule.mod" src=".\1200-503845-20180502\RAPID\T_ROB1\SmarTacTestModule.mod" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\UtilityModule.mod" src=".\1200-503845-20180502\RAPID\T_ROB1\UtilityModule.mod" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\WeldTestModule.mod" src=".\1200-503845-20180502\RAPID\T_ROB1\WeldTestModule.mod" />
+        <file dest="TwoAxisGantry_1.00.0000.00\RAPID\T_ROB1\WorldZoneModule.mod" src=".\1200-503845-20180502\RAPID\T_ROB1\WorldZoneModule.mod" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\DeviceNet\EIO_BK5250.cfg" src=".\1200-503845-20180502\SYSPAR\DeviceNet\EIO_BK5250.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\DeviceNet\EIO_d651.cfg" src=".\1200-503845-20180502\SYSPAR\DeviceNet\EIO_d651.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\DeviceNet\EIO_d652.cfg" src=".\1200-503845-20180502\SYSPAR\DeviceNet\EIO_d652.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\DeviceNet\EIO_FESTOValve.cfg" src=".\1200-503845-20180502\SYSPAR\DeviceNet\EIO_FESTOValve.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\DeviceNet\EIO_RPC.cfg" src=".\1200-503845-20180502\SYSPAR\DeviceNet\EIO_RPC.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\EtherNetIP\EIO_EN_Internal_Device.cfg" src=".\1200-503845-20180502\SYSPAR\EtherNetIP\EIO_EN_Internal_Device.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\PROFINET\EIO_PNVC5.cfg" src=".\1200-503845-20180502\SYSPAR\PROFINET\EIO_PNVC5.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\PROFINET\EIO_PN_Internal_Device.cfg" src=".\1200-503845-20180502\SYSPAR\PROFINET\EIO_PN_Internal_Device.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\PROFINET\SIO_PN_Internal_Device.cfg" src=".\1200-503845-20180502\SYSPAR\PROFINET\SIO_PN_Internal_Device.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\RPC\PROC_RPC.cfg" src=".\1200-503845-20180502\SYSPAR\RPC\PROC_RPC.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\TXRES\weld.eng" src=".\1200-503845-20180502\SYSPAR\TXRES\weld.eng" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\WeldGuide\EIO_WeldGuide.cfg" src=".\1200-503845-20180502\SYSPAR\WeldGuide\EIO_WeldGuide.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\WeldGuide\PROC_WeldGuide.cfg" src=".\1200-503845-20180502\SYSPAR\WeldGuide\PROC_WeldGuide.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\WeldGuide\SIO_WeldGuideCom1.cfg" src=".\1200-503845-20180502\SYSPAR\WeldGuide\SIO_WeldGuideCom1.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\EIO_ToolChanger.cfg" src=".\1200-503845-20180502\SYSPAR\EIO_ToolChanger.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\MMC_ProductionManager.cfg" src=".\1200-503845-20180502\SYSPAR\MMC_ProductionManager.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\PROC_ProductionManger.cfg" src=".\1200-503845-20180502\SYSPAR\PROC_ProductionManger.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\SYSPAR\SYS_1200.cfg" src=".\1200-503845-20180502\SYSPAR\SYS_1200.cfg" />
+        <file dest="TwoAxisGantry_1.00.0000.00\install.cmd" src=".\1200-503845-20180502\install.cmd" />
+        <file dest="TwoAxisGantry_1.00.0000.00\version.xml" src=".\1200-503845-20180502\version.xml" />
+      </files>
+    </payload>
+  </res>
+</rpk_spec>

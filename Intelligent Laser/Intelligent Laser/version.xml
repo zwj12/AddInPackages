@@ -1,0 +1,11 @@
+<Version>
+  <Major>1</Major>
+  <Minor>0</Minor>
+  <Build>0</Build>
+  <Revision>0</Revision>
+  <VersionName>1.0</VersionName>
+  <Title>ILOpticalTracking</Title>
+  <Description>ILOpticalTracking AddIn</Description>
+  <Date>2019-03-25</Date>
+  <Type>AdditionalOption</Type>
+</Version>

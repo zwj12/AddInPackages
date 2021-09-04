@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rpk_spec version="1.0">
+  <metadata>
+    <id>open.intelligentlaser.opticaltracking</id>
+    <description>ILOpticalTracking AddIn</description>
+    <publisher>Intelligent Laser</publisher>
+    <url>http://www.intelligentlaser.cn/</url>
+    <publish_date>2019-03-25</publish_date>
+    <version>1.00.0000.00</version>
+  </metadata>
+  <res>
+    <payload id="open.intelligentlaser.opticaltracking">
+      <type>basic</type>
+      <platforms>
+        <platform>rc</platform>
+        <platform>vc</platform>
+      </platforms>
+      <files>
+        <file dest="ILOpticalTracking_1.00.0000.00\config\PROC_SENSOR.cfg" src=".\ILOpticalTracking RobotWare Add-in\config\PROC_SENSOR.cfg" />
+        <file dest="ILOpticalTracking_1.00.0000.00\config\SYS_SampleCode_T_ROB1.cfg" src=".\ILOpticalTracking RobotWare Add-in\config\SYS_SampleCode_T_ROB1.cfg" />
+        <file dest="ILOpticalTracking_1.00.0000.00\config\SYS_SampleCode_T_ROB2.cfg" src=".\ILOpticalTracking RobotWare Add-in\config\SYS_SampleCode_T_ROB2.cfg" />
+        <file dest="ILOpticalTracking_1.00.0000.00\config\SYS_SampleCode_T_ROB3.cfg" src=".\ILOpticalTracking RobotWare Add-in\config\SYS_SampleCode_T_ROB3.cfg" />
+        <file dest="ILOpticalTracking_1.00.0000.00\config\SYS_SampleCode_T_ROB4.cfg" src=".\ILOpticalTracking RobotWare Add-in\config\SYS_SampleCode_T_ROB4.cfg" />
+        <file dest="ILOpticalTracking_1.00.0000.00\config\SIO_SENSOR.cfg" src=".\ILOpticalTracking RobotWare Add-in\config\SIO_SENSOR.cfg" />
+        <file dest="ILOpticalTracking_1.00.0000.00\language\en\elogtext.xml" src=".\ILOpticalTracking RobotWare Add-in\language\en\elogtext.xml" />
+        <file dest="ILOpticalTracking_1.00.0000.00\language\en\elogtitles.xml" src=".\ILOpticalTracking RobotWare Add-in\language\en\elogtitles.xml" />
+        <file dest="ILOpticalTracking_1.00.0000.00\RAPID\OpticalTrackingModule.mod" src=".\ILOpticalTracking RobotWare Add-in\RAPID\OpticalTrackingModule.mod" />
+        <file dest="ILOpticalTracking_1.00.0000.00\install.cmd" src=".\ILOpticalTracking RobotWare Add-in\install.cmd" />
+        <file dest="ILOpticalTracking_1.00.0000.00\version.xml" src=".\Intelligent Laser\version.xml" />
+      </files>
+    </payload>
+  </res>
+</rpk_spec>

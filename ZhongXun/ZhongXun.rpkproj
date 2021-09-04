@@ -1,0 +1,5 @@
+.\ZhongXun.rpkspec
+.\ZhongXun.manifest
+PublisherCertificateFile:
+LicensingCertificateFile:
+TimestampServerUrl:http://timestamp.verisign.com/scripts/timstamp.dll

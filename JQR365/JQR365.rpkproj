@@ -1,0 +1,5 @@
+.\JQR365.rpkspec
+.\JQR365.manifest
+PublisherCertificateFile:
+LicensingCertificateFile:
+TimestampServerUrl:http://timestamp.verisign.com/scripts/timstamp.dll

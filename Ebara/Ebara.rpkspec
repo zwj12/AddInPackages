@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rpk_spec version="1.0">
+  <metadata>
+    <id>open.abb.ebara</id>
+    <description>Ebara AddIn</description>
+    <publisher>ABB</publisher>
+    <url>http://www.abb.com</url>
+    <publish_date>2019-06-05</publish_date>
+    <version>1.00.0000.17</version>
+  </metadata>
+  <res>
+    <payload id="open.abb.ebara">
+      <type>basic</type>
+      <platforms>
+        <platform>rc</platform>
+        <platform>vc</platform>
+      </platforms>
+      <files>
+        <file dest="Ebara_1.00.0000.17\config\MOC\DrveioTrustlevel.cfg" src=".\Ebara RobotWare Add-in\config\MOC\DrveioTrustlevel.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\MOC\Drveio_2.cfg" src=".\Ebara RobotWare Add-in\config\MOC\Drveio_2.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\MOC\IoA_1_Drveio2.cfg" src=".\Ebara RobotWare Add-in\config\MOC\IoA_1_Drveio2.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\MOC\mocActivationErrorModel.cfg" src=".\Ebara RobotWare Add-in\config\MOC\mocActivationErrorModel.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\MOC\mocActivationNormal.cfg" src=".\Ebara RobotWare Add-in\config\MOC\mocActivationNormal.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\MOC\MOC_Ebara.cfg" src=".\Ebara RobotWare Add-in\config\MOC\MOC_Ebara.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\EIO_B520.cfg" src=".\Ebara RobotWare Add-in\config\EIO_B520.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\EIO_BK5250.cfg" src=".\Ebara RobotWare Add-in\config\EIO_BK5250.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\EIO_d652.cfg" src=".\Ebara RobotWare Add-in\config\EIO_d652.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\EIO_FroniusSmarTac.cfg" src=".\Ebara RobotWare Add-in\config\EIO_FroniusSmarTac.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\EIO_SystemINOUT.cfg" src=".\Ebara RobotWare Add-in\config\EIO_SystemINOUT.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\EIO_Virtual_ProductionManager.cfg" src=".\Ebara RobotWare Add-in\config\EIO_Virtual_ProductionManager.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\install.cmd" src=".\Ebara RobotWare Add-in\config\install.cmd" />
+        <file dest="Ebara_1.00.0000.17\config\MMC_Virtual_ProductionManager.cfg" src=".\Ebara RobotWare Add-in\config\MMC_Virtual_ProductionManager.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\PROC_FroniusSmarTac.cfg" src=".\Ebara RobotWare Add-in\config\PROC_FroniusSmarTac.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\PROC_TorchServices.cfg" src=".\Ebara RobotWare Add-in\config\PROC_TorchServices.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\PROC_Virtual_ProductionManager.cfg" src=".\Ebara RobotWare Add-in\config\PROC_Virtual_ProductionManager.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\ProductionSetup_Ebara.xml" src=".\Ebara RobotWare Add-in\config\ProductionSetup_Ebara.xml" />
+        <file dest="Ebara_1.00.0000.17\config\SYS_Ebara.cfg" src=".\Ebara RobotWare Add-in\config\SYS_Ebara.cfg" />
+        <file dest="Ebara_1.00.0000.17\config\SYS_ProductionManager.cfg" src=".\Ebara RobotWare Add-in\config\SYS_ProductionManager.cfg" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_POS1\CalibDataModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_POS1\CalibDataModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_POS1\MainModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_POS1\MainModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_POS1\TaskModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_POS1\TaskModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_POS1\WeldSyncModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_POS1\WeldSyncModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_POS1\WorldZoneModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_POS1\WorldZoneModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\BE_User.sys" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\BE_User.sys" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\CalibDataModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\CalibDataModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\ErrorHandlingModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\ErrorHandlingModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\GeneralModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\GeneralModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\GlobalDataModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\GlobalDataModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\LoggingModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\LoggingModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\MainModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\MainModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\Module_1_2163_230_762_45.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\Module_1_2163_230_762_45.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\Module_1_2674_214_762_70.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\Module_1_2674_214_762_70.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\Module_3_2163_182_1143_111.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\Module_3_2163_182_1143_111.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\Module_3_2163_183_1143_111.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\Module_3_2163_183_1143_111.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\Module_3_3185_254_3185_254.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\Module_3_3185_254_3185_254.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\Only606Module.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\Only606Module.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\ScanModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\ScanModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\ScanPipeModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\ScanPipeModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\ScanV2Module.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\ScanV2Module.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\ServiceModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\ServiceModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\SharedModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\SharedModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\SmarTacTestModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\SmarTacTestModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\TaskModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\TaskModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\TestModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\TestModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\WeldSyncModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\WeldSyncModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\WeldTestModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\WeldTestModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB1\WorldZoneModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB1\WorldZoneModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\BE_User.sys" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\BE_User.sys" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\CalibDataModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\CalibDataModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\ErrorHandlingModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\ErrorHandlingModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\MainModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\MainModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\ServiceModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\ServiceModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\SmarTacTestModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\SmarTacTestModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\TaskModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\TaskModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\TestModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\TestModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\WeldSyncModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\WeldSyncModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\WeldTestModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\WeldTestModule.mod" />
+        <file dest="Ebara_1.00.0000.17\RAPID\T_ROB2\WorldZoneModule.mod" src=".\Ebara RobotWare Add-in\RAPID\T_ROB2\WorldZoneModule.mod" />
+        <file dest="Ebara_1.00.0000.17\tps\TpsViewEbaraV2.dll" src=".\Ebara RobotWare Add-in\tps\TpsViewEbaraV2.dll" />
+        <file dest="Ebara_1.00.0000.17\tps\TpsViewEbaraV2Texts.dll" src=".\Ebara RobotWare Add-in\tps\TpsViewEbaraV2Texts.dll" />
+        <file dest="Ebara_1.00.0000.17\tps\TpsViewScreenMaker_Ebara.dll" src=".\Ebara RobotWare Add-in\tps\TpsViewScreenMaker_Ebara.dll" />
+        <file dest="Ebara_1.00.0000.17\tps\TpsViewScreenMaker_Ebara.gtpu.dll" src=".\Ebara RobotWare Add-in\tps\TpsViewScreenMaker_Ebara.gtpu.dll" />
+        <file dest="Ebara_1.00.0000.17\language\en\elogtext.xml" src=".\Ebara RobotWare Add-in\language\en\elogtext.xml" />
+        <file dest="Ebara_1.00.0000.17\language\en\elogtitles.xml" src=".\Ebara RobotWare Add-in\language\en\elogtitles.xml" />
+        <file dest="Ebara_1.00.0000.17\language\zh\tps\TpsViewEbaraV2Texts.resources.dll" src=".\Ebara RobotWare Add-in\language\zh\tps\TpsViewEbaraV2Texts.resources.dll" />
+        <file dest="Ebara_1.00.0000.17\install.cmd" src=".\Ebara RobotWare Add-in\install.cmd" />
+        <file dest="Ebara_1.00.0000.17\version.xml" src=".\Ebara\version.xml" />
+      </files>
+    </payload>
+  </res>
+</rpk_spec>

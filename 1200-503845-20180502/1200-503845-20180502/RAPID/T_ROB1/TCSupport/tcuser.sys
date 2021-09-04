@@ -1,0 +1,166 @@
+%%%
+  VERSION: 1
+  LANGUAGE: ENGLISH
+%%%
+
+MODULE TCUSER(SYSMODULE)
+    !--------------------------------------------------------------------------
+    ! Module:  TCUSER (Tool Changer User Module)
+    !
+    ! Description:  This module contains the user instructions to move the robot
+    !               It also contains tooldata and tool stand lock positions
+    !
+    !---------------------------------------------------------------------------
+
+    !---------------------------------------
+    ! G L O B A L  D A T A
+    !--------------------------------------- 
+
+    ! Description: 
+    ! CONST string Version_XXXXXXXX := "1.2.3";
+    !
+    !          XXXXXXXX - Module name
+    !                 1 - version number  (changed of SEROP) 
+    !                 2 - revision number (changed of SEROP)
+    !                 3 - revision number (changed of SEROP)
+    CONST string Version_TCUSER:="5.13.Beta";
+
+    ! Tool data used with no tool, tool changer empty
+    ! Needs to updated with the actual value of tool changer without tool
+    PERS tooldata TcNoTool:=[TRUE,[[0,0,0],[1,0,0,0]],[0.001,[0,0,0.001],[1,0,0,0],0,0,0]];
+
+    ! Tool data used with all tools
+    ! Needs to be updated with the actual values of the connected tools
+    PERS tooldata TcTool{TC_MAX_STANDS}:=[[TRUE,[[0,0,0],[1,0,0,0]],[0.001,[0,0,0.001],[1,0,0,0],0,0,0]],
+                                         [TRUE,[[0,0,0],[1,0,0,0]],[0.001,[0,0,0.001],[1,0,0,0],0,0,0]],
+                                         [TRUE,[[0,0,0],[1,0,0,0]],[0.001,[0,0,0.001],[1,0,0,0],0,0,0]],
+                                         [TRUE,[[0,0,0],[1,0,0,0]],[-1,[0,0,0],[1,0,0,0],0,0,0]]];
+
+    ! Tool stand positions, lock positions for all tools
+    ! The positions can be modified by running the service routine ToolModifyLockPos
+    PERS robtarget TcLockPos{TC_MAX_STANDS}:=[[[933.202,-751.205,478.747],[0.00248099,-0.000652734,-0.904646,-0.426157],[-2,-1,0,0],[919.002,601.033,9E+09,9E+09,9E+09,9E+09]],
+                                              [[-160.311,-200.153,531.167],[0.000280356,0.00237858,0.905641,0.424037],[-1,0,1,0],[0.000245186,0.00200861,9E+09,9E+09,9E+09,9E+09]],
+                                              [[1075.61,-815.101,525.728],[0.00246992,-0.000641567,-0.904622,-0.426208],[-2,-1,0,0],[919.001,601.033,9E+09,9E+09,9E+09,9E+09]],
+                                              [[0,0,0],[0,0,0,0],[-1,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]]];
+
+    ! Tool stand positions, drop positions for all tools
+    ! The positions can be modified by running the service routine ToolModifyDropPos
+    PERS robtarget TcDropPos{TC_MAX_STANDS}:=[[[933.202,-751.205,478.747],[0.00248099,-0.000652734,-0.904646,-0.426157],[-2,-1,0,0],[919.002,601.033,9E+09,9E+09,9E+09,9E+09]],
+                                              [[-160.311,-200.153,531.167],[0.000280356,0.00237858,0.905641,0.424037],[-1,0,1,0],[0.000245186,0.00200861,9E+09,9E+09,9E+09,9E+09]],
+                                              [[1075.61,-815.1,525.728],[0.00246992,-0.000641567,-0.904622,-0.426208],[-2,-1,0,0],[919.001,601.033,9E+09,9E+09,9E+09,9E+09]],
+                                              [[0,0,0],[0,0,0,0],[-1,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]]];
+
+    ! Offset from lock position
+    PERS num TcLockPosOffset{TC_MAX_STANDS}:=[-100,-100,-100,-100];
+
+    ! Offset from drop position
+    PERS num TcDropPosOffset{TC_MAX_STANDS}:=[-100,-100,-100,-100];
+
+    ! Home positions, home positions for all tools
+    ! The positions can be modified by running the service routine ToolModifyHomePos
+    PERS jointtarget TcHomePos{TC_MAX_STANDS}:=[[[-83.6975,43.2701,-40.9994,-7.28822,65.4946,66.0558],[919.002,601.033,9E+09,9E+09,9E+09,9E+09]],
+                                                [[-79.8633,46.3342,-22.6497,8.78471,69.0013,102.358],[0.000245186,0.00200861,9E+09,9E+09,9E+09,9E+09]],
+                                                [[-98.6259,50.9883,-48.2851,-8.56364,102.585,77.7921],[919.001,601.033,9E+09,9E+09,9E+09,9E+09]],
+                                                [[0,0,0,0,0,0],[0,0,0,0,0,0]]];
+    ! Work object data for each tool stand
+    PERS wobjdata TcStandWobj{TC_MAX_STANDS}:=[[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]],
+                                               [FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]],
+                                               [FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]],
+                                               [FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]]];
+
+    ! Robot speed while moving to home/empty/lock/ready positions
+    PERS speeddata TcMoveSpeed:=[200,500,5000,1000];
+
+    ! Current tooldata used in GoToTcHomePos and GoToTcReadyPos
+    PERS tooldata TcCurrentTool:=[TRUE,[[0,0,0],[1,0,0,0]],[0.001,[0,0,0.001],[1,0,0,0],0,0,0]];
+    PERS wobjdata TcCurrentwobj:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+
+    !----------------------------------------
+    ! U S E R   R O U T I N E S
+    !----------------------------------------
+
+    ! Moves robot to tool stand position, empty position above stand
+    PROC GoToTcEmptyPos(standno StandPos)
+
+        ! Check the tooldata
+        TcCheckTool TcNoTool;
+
+        TcCurrentwobj:=TcStandWobj{StandPos};
+        MoveL RelTool(TcLockPos{StandPos},0,0,TcLockPosOffset{StandPos}),TcMoveSpeed,z10,TcNoTool\WObj:=TcCurrentwobj;
+
+    ENDPROC
+
+    ! Moves robot to tool stand position, lock position for the selected tool
+    ! Dummy position, this robtarget needs to be modified
+    ! The positions in TcLockPos can be modified by running the service routine ToolModifyLockPos
+    PROC GoToTcLockPos(standno StandPos)
+
+        ! Check the tooldata
+        TcCheckTool TcNoTool;
+
+        TcCurrentwobj:=TcStandWobj{StandPos};
+        MoveL TcLockPos{StandPos},TcMoveSpeed,fine,TcNoTool\WObj:=TcCurrentwobj;
+
+    ENDPROC
+
+    ! Moves robot to tool stand position, drop position
+    ! Dummy position, this robtarget needs to be modified
+    ! The positions in TcDropPos can be modified by running the service routine ToolModifyDropPos
+    PROC GoToTcDropPos(standno StandPos)
+
+        ! Check the tooldata
+        TcCheckTool TcNoTool;
+
+        TcCurrentwobj:=TcStandWobj{StandPos};
+        MoveL TcDropPos{StandPos},TcMoveSpeed,fine,TcNoTool\WObj:=TcCurrentwobj;
+
+    ENDPROC
+
+    ! Moves robot to tool stand position, ready position
+    PROC GoToTcReadyPos(standno StandPos)
+
+        TcCurrentTool:=TcTool{StandPos};
+
+        ! Check the tooldata
+        TcCheckTool TcCurrentTool;
+
+        TcCurrentwobj:=TcStandWobj{StandPos};
+        MoveL RelTool(TcLockPos{StandPos},0,0,TcLockPosOffset{StandPos}),TcMoveSpeed,z10,TcCurrentTool\WObj:=TcCurrentwobj;
+
+    ENDPROC
+
+    ! Moves robot to home position
+    ! Dummy position, this robtarget needs to be modified
+    ! The positions in TcHomePos can be modified by running the service routine ToolModifyHomePos
+    PROC GoToTcHomePos(standno StandPos)
+
+        TcCurrentTool:=CTool();
+
+        TcCurrentTool.tframe.trans.x:=0;
+        TcCurrentTool.tframe.trans.y:=0;
+        TcCurrentTool.tframe.trans.z:=TcNoTool.tframe.trans.z;
+
+        ! Check the tooldata
+        TcCheckTool TcCurrentTool;
+
+        TcCurrentwobj:=TcStandWobj{StandPos};
+        MoveAbsJ TcHomePos{StandPos},TcMoveSpeed,fine,TcCurrentTool\WObj:=TcCurrentwobj;
+
+    ENDPROC
+
+    !----------------------------------------
+    ! L O C A L   R O U T I N E S
+    !----------------------------------------
+
+    ! Checks that tooldata is defined
+    LOCAL PROC TcCheckTool(tooldata TcCurrTool)
+
+        ! Report error if tool is undefined
+        IF (TcCurrTool.tload.mass<=0 OR TcCurrTool.tload.cog.z<=0) THEN
+            EventLog PROCESS_ERR,760,TYPE_ERR,ERRSTR_TASK,ERRSTR_CONTEXT,TcTextGet(58),TcTextGet(59),TcTextGet(60);
+            Stop;
+        ENDIF
+
+    ENDPROC
+
+ENDMODULE

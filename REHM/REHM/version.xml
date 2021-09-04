@@ -1,0 +1,11 @@
+<Version>
+  <Major>1</Major>
+  <Minor>0</Minor>
+  <Build>0</Build>
+  <Revision>16</Revision>
+  <VersionName>1.0.16</VersionName>
+  <Title>REHM</Title>
+  <Description>REHM AddIn</Description>
+  <Date>2021-01-05</Date>
+  <Type>AdditionalOption</Type>
+</Version>
