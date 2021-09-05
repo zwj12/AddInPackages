@@ -3,7 +3,7 @@
   <Apps>
     <App>
       <Name>ZhongXun</Name>
-      <SystemApp>true</SystemApp>
+      <SystemApp>false</SystemApp>
       <Index>15</Index>
       <Assembly>TpsViewZhongXun.dll</Assembly>
       <Type>TpsViewZhongXunNameSpace.TpsViewZhongXun</Type>

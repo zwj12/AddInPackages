@@ -62,16 +62,24 @@ mkdir -path $HOME/yaml
 #NEXT
 
 # Copy files
-getkey -id "SHIPBUILDING" -strvar $ANSWER -errlabel NEXT
+getkey -id "ROBOT107895" -strvar $ANSWER -errlabel NEXT
 copy -from $BOOTPATH/config/ProductionSetup_ZHONGXUN.xml -to $HOME/ProdScr/config/ProductionSetup_ZHONGXUN.xml
-copy -from $BOOTPATH/tps/TpsViewZHONGXUN.dll -to $HOME/ProdScr/tps/TpsViewZHONGXUN.dll
-copy -from $BOOTPATH/tps/TpsViewZHONGXUNTexts.dll -to $HOME/ProdScr/tps/TpsViewZHONGXUNTexts.dll
-copy -from $BOOTPATH/tps/icon_ZHONGXUN.png -to $HOME/ProdScr/tps/icon_ZHONGXUN.png
-copy -from $BOOTPATH/language/zh/tps/TpsViewZHONGXUNTexts.resources.dll -to $HOME/ProdScr/language/zh/tps/TpsViewZHONGXUNTexts.resources.dll
+# copy -from $BOOTPATH/tps/TpsViewZHONGXUN.dll -to $HOME/ProdScr/tps/TpsViewZHONGXUN.dll
+# copy -from $BOOTPATH/tps/TpsViewZHONGXUNTexts.dll -to $HOME/ProdScr/tps/TpsViewZHONGXUNTexts.dll
+# copy -from $BOOTPATH/tps/icon_ZHONGXUN.png -to $HOME/ProdScr/tps/icon_ZHONGXUN.png
+# copy -from $BOOTPATH/language/zh/tps/TpsViewZHONGXUNTexts.resources.dll -to $HOME/ProdScr/language/zh/tps/TpsViewZHONGXUNTexts.resources.dll
+#NEXT
+
+getkey -id "ROBOT107896" -strvar $ANSWER -errlabel NEXT
+copy -from $BOOTPATH/config/ProductionSetup_ZHONGXUN.xml -to $HOME/ProdScr/config/ProductionSetup_ZHONGXUN.xml
+# copy -from $BOOTPATH/tps/TpsViewZHONGXUN.dll -to $HOME/ProdScr/tps/TpsViewZHONGXUN.dll
+# copy -from $BOOTPATH/tps/TpsViewZHONGXUNTexts.dll -to $HOME/ProdScr/tps/TpsViewZHONGXUNTexts.dll
+# copy -from $BOOTPATH/tps/icon_ZHONGXUN.png -to $HOME/ProdScr/tps/icon_ZHONGXUN.png
+# copy -from $BOOTPATH/language/zh/tps/TpsViewZHONGXUNTexts.resources.dll -to $HOME/ProdScr/language/zh/tps/TpsViewZHONGXUNTexts.resources.dll
 #NEXT
 
 # Load configuration files
-getkey -id "SHIPBUILDING" -strvar $ANSWER -errlabel NEXT
+getkey -id "ROBOT107895" -strvar $ANSWER -errlabel NEXT
 config -filename $BOOTPATH/config/MOC_GantryXYZ_MU433_M789DM1.cfg -domain MOC -replace
 config -filename $BOOTPATH/config/mocMoutIRB140_0.81_6.cfg -domain MOC -replace
 
@@ -86,10 +94,34 @@ config -filename $BOOTPATH/config/EIO_LocalIO.cfg -domain EIO -replace
 config -filename $BOOTPATH/config/EIO_Virtual.cfg -domain EIO -replace
 config -filename $BOOTPATH/config/PROC_Virtual.cfg -domain PROC -replace
 
-config -filename $BOOTPATH/config/EIO_PN_Internal_Device.cfg -domain EIO -replace
+config -filename $BOOTPATH/config/EIO_PN_Internal_Device_107895.cfg -domain EIO -replace
 config -filename $BOOTPATH/config/SIO_PN_Internal_Device.cfg -domain SIO -replace
 
-config -filename $BOOTPATH/config/EIO_FroniusSmarTac.cfg -domain EIO -replace
+config -filename $BOOTPATH/config/EIO_FroniusSmarTac_107895.cfg -domain EIO -replace
+config -filename $BOOTPATH/config/PROC_FroniusSmarTac.cfg -domain PROC -replace
+
+config -filename $BOOTPATH/config/SYS.cfg -domain SYS -replace
+#NEXT
+
+getkey -id "ROBOT107896" -strvar $ANSWER -errlabel NEXT
+config -filename $BOOTPATH/config/MOC_GantryXYZ_MU433_M789DM1.cfg -domain MOC -replace
+config -filename $BOOTPATH/config/mocMoutIRB140_0.81_6.cfg -domain MOC -replace
+
+config -filename $BOOTPATH/config/EIO_Virtual_ProductionManager.cfg -domain EIO -replace
+config -filename $BOOTPATH/config/PROC_Virtual_ProductionManager.cfg -domain PROC -replace
+config -filename $BOOTPATH/config/MMC_Virtual_ProductionManager.cfg -domain MMC -replace
+
+config -filename $BOOTPATH/config/EIO_Virtual_SystemInOut.cfg -domain EIO -replace
+
+config -filename $BOOTPATH/config/EIO_LocalIO.cfg -domain EIO -replace
+
+config -filename $BOOTPATH/config/EIO_Virtual.cfg -domain EIO -replace
+config -filename $BOOTPATH/config/PROC_Virtual.cfg -domain PROC -replace
+
+config -filename $BOOTPATH/config/EIO_PN_Internal_Device_107896.cfg -domain EIO -replace
+config -filename $BOOTPATH/config/SIO_PN_Internal_Device.cfg -domain SIO -replace
+
+config -filename $BOOTPATH/config/EIO_FroniusSmarTac_107896.cfg -domain EIO -replace
 config -filename $BOOTPATH/config/PROC_FroniusSmarTac.cfg -domain PROC -replace
 
 config -filename $BOOTPATH/config/SYS.cfg -domain SYS -replace

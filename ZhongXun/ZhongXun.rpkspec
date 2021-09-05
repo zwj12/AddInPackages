@@ -5,7 +5,7 @@
     <description>ZhongXun AddIn</description>
     <publisher>JYWeld</publisher>
     <url>www.shzhongxun.com</url>
-    <publish_date>2021-09-04</publish_date>
+    <publish_date>2021-09-05</publish_date>
     <version>1.00.0000.02</version>
   </metadata>
   <res>
@@ -16,9 +16,7 @@
         <platform>vc</platform>
       </platforms>
       <files>
-        <file dest="ZhongXun_1.00.0000.02\config\EIO_FroniusSmarTac.cfg" src=".\Source\config\EIO_FroniusSmarTac.cfg" />
         <file dest="ZhongXun_1.00.0000.02\config\EIO_LocalIO.cfg" src=".\Source\config\EIO_LocalIO.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\EIO_PN_Internal_Device.cfg" src=".\Source\config\EIO_PN_Internal_Device.cfg" />
         <file dest="ZhongXun_1.00.0000.02\config\EIO_Virtual.cfg" src=".\Source\config\EIO_Virtual.cfg" />
         <file dest="ZhongXun_1.00.0000.02\config\EIO_Virtual_ProductionManager.cfg" src=".\Source\config\EIO_Virtual_ProductionManager.cfg" />
         <file dest="ZhongXun_1.00.0000.02\config\EIO_Virtual_SystemInOut.cfg" src=".\Source\config\EIO_Virtual_SystemInOut.cfg" />
@@ -34,6 +32,10 @@
         <file dest="ZhongXun_1.00.0000.02\config\ProductionSetup_ZhongXun.xml" src=".\Source\config\ProductionSetup_ZhongXun.xml" />
         <file dest="ZhongXun_1.00.0000.02\config\SIO_PN_Internal_Device.cfg" src=".\Source\config\SIO_PN_Internal_Device.cfg" />
         <file dest="ZhongXun_1.00.0000.02\config\SYS.cfg" src=".\Source\config\SYS.cfg" />
+        <file dest="ZhongXun_1.00.0000.02\config\EIO_FroniusSmarTac_107895.cfg" src=".\Source\config\EIO_FroniusSmarTac_107895.cfg" />
+        <file dest="ZhongXun_1.00.0000.02\config\EIO_FroniusSmarTac_107896.cfg" src=".\Source\config\EIO_FroniusSmarTac_107896.cfg" />
+        <file dest="ZhongXun_1.00.0000.02\config\EIO_PN_Internal_Device_107895.cfg" src=".\Source\config\EIO_PN_Internal_Device_107895.cfg" />
+        <file dest="ZhongXun_1.00.0000.02\config\EIO_PN_Internal_Device_107896.cfg" src=".\Source\config\EIO_PN_Internal_Device_107896.cfg" />
         <file dest="ZhongXun_1.00.0000.02\language\zh\tps\TpsViewZhongXunTexts.resources.dll" src=".\Source\language\zh\tps\TpsViewZhongXunTexts.resources.dll" />
         <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\CalibDataModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\CalibDataModule.mod" />
         <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\GeneralModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\GeneralModule.mod" />
