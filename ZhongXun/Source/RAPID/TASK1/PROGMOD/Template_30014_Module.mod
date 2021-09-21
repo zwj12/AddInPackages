@@ -436,17 +436,9 @@ MODULE Template_30014_Module
     ENDPROC
 
     LOCAL PROC WeldSeam(num numSeamIndex)
-        VAR dnum dnumWeldSeamStatus;
-
-        dnumWeldSeamStatus:=GOutputDnum(Go112_WeldCompleted);
-        BitClear dnumWeldSeamStatus,numSeamIndex;
-        SetGO Go112_WeldCompleted,dnumWeldSeamStatus;
-        SetGO Go80_WeldingStatus,pow(2,numSeamIndex-1);
+        UpdateWeldSeamStatus\Start,numSeamIndex;
         %"Seam_"+ValToStr(numSeamIndex)%;
-        SetGO Go80_WeldingStatus,0;
-        BitSet dnumWeldSeamStatus,numSeamIndex;
-        SetGO Go112_WeldCompleted,dnumWeldSeamStatus;
-
+        UpdateWeldSeamStatus numSeamIndex;
     ENDPROC
 
     LOCAL PROC Seam_1()

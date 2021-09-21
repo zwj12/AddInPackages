@@ -12,12 +12,12 @@ MODULE CalibDataModule
 
     TASK PERS bool boolSaveModule:=FALSE;
 
-    TASK PERS tooldata toolWeldGun:=[TRUE,[[-55.6294,1.28422,543.39],[0.981627,0,0.190809,0]],[3,[0,0,1],[1,0,0,0],0,0,0]];
+    TASK PERS tooldata toolWeldGun:=[TRUE,[[-60.4407,4.01094,538.005],[0.981627,0,0.190809,0]],[3,[0,0,1],[1,0,0,0],0,0,0]];
     TASK PERS tooldata toolLaser:=[TRUE,[[40.746,0.415,676.2],[1,0,0,0]],[3,[0,0,1],[1,0,0,0],0,0,0]];
     TASK PERS tooldata toolWeldGunLast:=[TRUE,[[-56.5158,3.15439,544.716],[0.981627,0,0.190809,0]],[3,[0,0,1],[1,0,0,0],0,0,0]];
     TASK PERS tooldata toolLaserLast:=[TRUE,[[40.746,0.415,676.2],[1,0,0,0]],[3,[0,0,1],[1,0,0,0],0,0,0]];
 
-    TASK PERS wobjdata wobjCurrent:=[FALSE,TRUE,"",[[-2125,0,60],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    TASK PERS wobjdata wobjCurrent:=[FALSE,TRUE,"",[[-2000,-450,60],[1,0,0,0]],[[-4.81316,-9.09859,2.91176],[1,0,0,0]]];
     TASK PERS wobjdata wobjTemp:=[FALSE,TRUE,"",[[-513,-36,67],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
 
     ! postions for tool definition of weld gun
@@ -37,11 +37,11 @@ MODULE CalibDataModule
     TASK PERS jointtarget jtLaserX:=[[161.523,27.5424,31.4752,-1.46627,31.0902,-18.0317],[687.112,9E+09,9E+09,9E+09,9E+09,9E+09]];
 
     TASK PERS jointtarget jointOrigin:=[[0,0,0,0,0,0],[0,0,0,9E+09,9E+09,9E+09]];
-    TASK PERS jointtarget jointHome:=[[0,-60,40,0,60,0],[-1171.32,0.000167129,-500,9E+09,9E+09,9E+09]];
+    TASK PERS jointtarget jointHome:=[[0,-60,40,0,60,0],[-1200,50.0001,-500,9E+09,9E+09,9E+09]];
     TASK PERS jointtarget jointTransportation:=[[0,-60,45,0,60,0],[0,500,-500,9E+09,9E+09,9E+09]];
     TASK PERS jointtarget jointLoadIdentify:=[[-20,0,0,0,0,0],[0,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    TASK PERS jointtarget jointCurrent:=[[120,-75,-15,0,90,90],[800,-500,-440,9E+09,9E+09,9E+09]];
-    TASK PERS jointtarget jointHomeOld:=[[0,-60,40,0,60,0],[-1150.46,-500.006,-500,9E+09,9E+09,9E+09]];
+    TASK PERS jointtarget jointCurrent:=[[60,-75,-15,0,90,-90],[800,500,-440,9E+09,9E+09,9E+09]];
+    TASK PERS jointtarget jointHomeOld:=[[0,-60,40,0,60,0],[-1426.35,-441.147,-500,9E+09,9E+09,9E+09]];
 
     TASK PERS robtarget robCurrent:=[[-209.736,482.664,216.543],[0.178965,-0.641361,0.732457,-0.141898],[-2,-1,1,1],[-800,500,0.00276417,9E+09,9E+09,9E+09]];
 

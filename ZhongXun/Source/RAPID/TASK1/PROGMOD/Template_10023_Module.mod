@@ -304,21 +304,12 @@ MODULE Template_10023_Module
         IF boolEnableSearch THEN
             SearchAndProcess;
         ENDIF
-
-        InhibWeld TRUE\Weld;
-
-        !WeldSeam 1;
-        !WeldSeam 2;
+        
         WeldSeam 22;
         MoveToReadyQuadrant 2;
 
         MoveToReadyQuadrant 3;
         WeldSeam 23;
-        WeldSeam 3;
-        WeldSeam 4;
-
-        InhibWeld TRUE\Weld\Weave;
-
         WeldSeam 5;
         MoveToReadyQuadrant 3;
 
@@ -425,17 +416,9 @@ MODULE Template_10023_Module
     ENDPROC
 
     LOCAL PROC WeldSeam(num numSeamIndex)
-        VAR dnum dnumWeldSeamStatus;
-
-        dnumWeldSeamStatus:=GOutputDnum(Go112_WeldCompleted);
-        BitClear dnumWeldSeamStatus,numSeamIndex;
-        SetGO Go112_WeldCompleted,dnumWeldSeamStatus;
-        SetGO Go80_WeldingStatus,pow(2,numSeamIndex-1);
+        UpdateWeldSeamStatus\Start,numSeamIndex;
         %"Seam_"+ValToStr(numSeamIndex)%;
-        SetGO Go80_WeldingStatus,0;
-        BitSet dnumWeldSeamStatus,numSeamIndex;
-        SetGO Go112_WeldCompleted,dnumWeldSeamStatus;
-
+        UpdateWeldSeamStatus numSeamIndex;
     ENDPROC
 
     LOCAL PROC Seam_1()

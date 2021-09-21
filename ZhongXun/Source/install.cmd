@@ -56,6 +56,17 @@ direxist -path $HOME/RAATCfg/RAPID/TASK3/SYSMOD -label NEXT
 mkdir -path $HOME/RAATCfg/RAPID/TASK3/SYSMOD
 #NEXT
 
+# Copy Data Modules
+copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/CalibDataModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/CalibDataModule.mod
+copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/MainModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/MainModule.mod
+copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/ProcessDataModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/ProcessDataModule.mod
+copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/TaskModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/TaskModule.mod
+copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/TestModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/TestModule.mod
+copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/SmarTacTestModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/SmarTacTestModule.mod
+copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/WeldTestModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/WeldTestModule.mod
+copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/TestAutoCal.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/TestAutoCal.mod
+copy -from $BOOTPATH/RAPID/TASK1/SYSMOD/AutoCal2b.sys -to $HOME/RAATCfg/RAPID/TASK1/SYSMOD/AutoCal2b.sys
+
 # Create YAML Dir
 direxist -path $HOME/yaml -label NEXT
 mkdir -path $HOME/yaml
@@ -104,7 +115,7 @@ config -filename $BOOTPATH/config/SYS.cfg -domain SYS -replace
 #NEXT
 
 getkey -id "ROBOT107896" -strvar $ANSWER -errlabel NEXT
-config -filename $BOOTPATH/config/MOC_GantryXYZ_MU433_M789DM1.cfg -domain MOC -replace
+config -filename $BOOTPATH/config/MOC_GantryXYZ_MU433_M789DM1_107896.cfg -domain MOC -replace
 config -filename $BOOTPATH/config/mocMoutIRB140_0.81_6.cfg -domain MOC -replace
 
 config -filename $BOOTPATH/config/EIO_Virtual_ProductionManager.cfg -domain EIO -replace

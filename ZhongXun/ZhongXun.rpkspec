@@ -5,8 +5,8 @@
     <description>ZhongXun AddIn</description>
     <publisher>JYWeld</publisher>
     <url>www.shzhongxun.com</url>
-    <publish_date>2021-09-05</publish_date>
-    <version>1.00.0000.02</version>
+    <publish_date>2021-09-19</publish_date>
+    <version>1.00.0000.07</version>
   </metadata>
   <res>
     <payload id="open.jyweld.zhongxun">
@@ -16,59 +16,61 @@
         <platform>vc</platform>
       </platforms>
       <files>
-        <file dest="ZhongXun_1.00.0000.02\config\EIO_LocalIO.cfg" src=".\Source\config\EIO_LocalIO.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\EIO_Virtual.cfg" src=".\Source\config\EIO_Virtual.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\EIO_Virtual_ProductionManager.cfg" src=".\Source\config\EIO_Virtual_ProductionManager.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\EIO_Virtual_SystemInOut.cfg" src=".\Source\config\EIO_Virtual_SystemInOut.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\job.yml" src=".\Source\config\job.yml" />
-        <file dest="ZhongXun_1.00.0000.02\config\MMC_Virtual_ProductionManager.cfg" src=".\Source\config\MMC_Virtual_ProductionManager.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\moc.cfg" src=".\Source\config\moc.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\mocMoutIRB140_0.81_6.cfg" src=".\Source\config\mocMoutIRB140_0.81_6.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\MOC_GantryXYZ_MU433_M789DM1.cfg" src=".\Source\config\MOC_GantryXYZ_MU433_M789DM1.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\MOC_Robot.cfg" src=".\Source\config\MOC_Robot.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\PROC_FroniusSmarTac.cfg" src=".\Source\config\PROC_FroniusSmarTac.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\PROC_Virtual.cfg" src=".\Source\config\PROC_Virtual.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\PROC_Virtual_ProductionManager.cfg" src=".\Source\config\PROC_Virtual_ProductionManager.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\ProductionSetup_ZhongXun.xml" src=".\Source\config\ProductionSetup_ZhongXun.xml" />
-        <file dest="ZhongXun_1.00.0000.02\config\SIO_PN_Internal_Device.cfg" src=".\Source\config\SIO_PN_Internal_Device.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\SYS.cfg" src=".\Source\config\SYS.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\EIO_FroniusSmarTac_107895.cfg" src=".\Source\config\EIO_FroniusSmarTac_107895.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\EIO_FroniusSmarTac_107896.cfg" src=".\Source\config\EIO_FroniusSmarTac_107896.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\EIO_PN_Internal_Device_107895.cfg" src=".\Source\config\EIO_PN_Internal_Device_107895.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\config\EIO_PN_Internal_Device_107896.cfg" src=".\Source\config\EIO_PN_Internal_Device_107896.cfg" />
-        <file dest="ZhongXun_1.00.0000.02\language\zh\tps\TpsViewZhongXunTexts.resources.dll" src=".\Source\language\zh\tps\TpsViewZhongXunTexts.resources.dll" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\CalibDataModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\CalibDataModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\GeneralModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\GeneralModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\JobWeldModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\JobWeldModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\MainModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\MainModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\PMModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\PMModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\ProcessDataModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\ProcessDataModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\SharedModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\SharedModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\SmarTacTestModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\SmarTacTestModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\TaskModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\TaskModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\Template_10014_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_10014_Module.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\Template_10023_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_10023_Module.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\Template_20014_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_20014_Module.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\Template_20023_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_20023_Module.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\Template_30014_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_30014_Module.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\Template_30023_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_30023_Module.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\Template_40014_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_40014_Module.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\Template_40023_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_40023_Module.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\TestASFMFunctions.mod" src=".\Source\RAPID\TASK1\PROGMOD\TestASFMFunctions.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\TestAutoCal.mod" src=".\Source\RAPID\TASK1\PROGMOD\TestAutoCal.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\TestModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\TestModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\WeldTestModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\WeldTestModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\WorldZoneModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\WorldZoneModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\PROGMOD\YAMLModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\YAMLModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\SYSMOD\AutoCal2.sys" src=".\Source\RAPID\TASK1\SYSMOD\AutoCal2.sys" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\SYSMOD\AutoCal2b.sys" src=".\Source\RAPID\TASK1\SYSMOD\AutoCal2b.sys" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\SYSMOD\CommSF.sys" src=".\Source\RAPID\TASK1\SYSMOD\CommSF.sys" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK1\SYSMOD\LoggingModule.sys" src=".\Source\RAPID\TASK1\SYSMOD\LoggingModule.sys" />
-        <file dest="ZhongXun_1.00.0000.02\RAPID\TASK3\PROGMOD\MainModule.mod" src=".\Source\RAPID\TASK3\PROGMOD\MainModule.mod" />
-        <file dest="ZhongXun_1.00.0000.02\tps\icon_ZhongXun.png" src=".\Source\tps\icon_ZhongXun.png" />
-        <file dest="ZhongXun_1.00.0000.02\tps\TpsViewZhongXun.dll" src=".\Source\tps\TpsViewZhongXun.dll" />
-        <file dest="ZhongXun_1.00.0000.02\tps\TpsViewZhongXunTexts.dll" src=".\Source\tps\TpsViewZhongXunTexts.dll" />
-        <file dest="ZhongXun_1.00.0000.02\install.cmd" src=".\Source\install.cmd" />
+        <file dest="ZhongXun_1.00.0000.07\config\EIO_LocalIO.cfg" src=".\Source\config\EIO_LocalIO.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\EIO_Virtual.cfg" src=".\Source\config\EIO_Virtual.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\EIO_Virtual_ProductionManager.cfg" src=".\Source\config\EIO_Virtual_ProductionManager.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\EIO_Virtual_SystemInOut.cfg" src=".\Source\config\EIO_Virtual_SystemInOut.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\job.yml" src=".\Source\config\job.yml" />
+        <file dest="ZhongXun_1.00.0000.07\config\MMC_Virtual_ProductionManager.cfg" src=".\Source\config\MMC_Virtual_ProductionManager.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\moc.cfg" src=".\Source\config\moc.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\mocMoutIRB140_0.81_6.cfg" src=".\Source\config\mocMoutIRB140_0.81_6.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\MOC_GantryXYZ_MU433_M789DM1.cfg" src=".\Source\config\MOC_GantryXYZ_MU433_M789DM1.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\MOC_Robot.cfg" src=".\Source\config\MOC_Robot.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\PROC_FroniusSmarTac.cfg" src=".\Source\config\PROC_FroniusSmarTac.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\PROC_Virtual.cfg" src=".\Source\config\PROC_Virtual.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\PROC_Virtual_ProductionManager.cfg" src=".\Source\config\PROC_Virtual_ProductionManager.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\ProductionSetup_ZhongXun.xml" src=".\Source\config\ProductionSetup_ZhongXun.xml" />
+        <file dest="ZhongXun_1.00.0000.07\config\SIO_PN_Internal_Device.cfg" src=".\Source\config\SIO_PN_Internal_Device.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\SYS.cfg" src=".\Source\config\SYS.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\EIO_FroniusSmarTac_107895.cfg" src=".\Source\config\EIO_FroniusSmarTac_107895.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\EIO_FroniusSmarTac_107896.cfg" src=".\Source\config\EIO_FroniusSmarTac_107896.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\EIO_PN_Internal_Device_107895.cfg" src=".\Source\config\EIO_PN_Internal_Device_107895.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\EIO_PN_Internal_Device_107896.cfg" src=".\Source\config\EIO_PN_Internal_Device_107896.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\MOC_GantryXYZ_MU433_M789DM1_107895.cfg" src=".\Source\config\MOC_GantryXYZ_MU433_M789DM1_107895.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\config\MOC_GantryXYZ_MU433_M789DM1_107896.cfg" src=".\Source\config\MOC_GantryXYZ_MU433_M789DM1_107896.cfg" />
+        <file dest="ZhongXun_1.00.0000.07\language\zh\tps\TpsViewZhongXunTexts.resources.dll" src=".\Source\language\zh\tps\TpsViewZhongXunTexts.resources.dll" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\CalibDataModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\CalibDataModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\GeneralModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\GeneralModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\JobWeldModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\JobWeldModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\MainModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\MainModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\PMModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\PMModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\ProcessDataModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\ProcessDataModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\SharedModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\SharedModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\SmarTacTestModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\SmarTacTestModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\TaskModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\TaskModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\Template_10014_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_10014_Module.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\Template_10023_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_10023_Module.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\Template_20014_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_20014_Module.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\Template_20023_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_20023_Module.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\Template_30014_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_30014_Module.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\Template_30023_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_30023_Module.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\Template_40014_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_40014_Module.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\Template_40023_Module.mod" src=".\Source\RAPID\TASK1\PROGMOD\Template_40023_Module.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\TestASFMFunctions.mod" src=".\Source\RAPID\TASK1\PROGMOD\TestASFMFunctions.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\TestAutoCal.mod" src=".\Source\RAPID\TASK1\PROGMOD\TestAutoCal.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\TestModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\TestModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\WeldTestModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\WeldTestModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\WorldZoneModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\WorldZoneModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\PROGMOD\YAMLModule.mod" src=".\Source\RAPID\TASK1\PROGMOD\YAMLModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\SYSMOD\AutoCal2.sys" src=".\Source\RAPID\TASK1\SYSMOD\AutoCal2.sys" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\SYSMOD\AutoCal2b.sys" src=".\Source\RAPID\TASK1\SYSMOD\AutoCal2b.sys" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\SYSMOD\CommSF.sys" src=".\Source\RAPID\TASK1\SYSMOD\CommSF.sys" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK1\SYSMOD\LoggingModule.sys" src=".\Source\RAPID\TASK1\SYSMOD\LoggingModule.sys" />
+        <file dest="ZhongXun_1.00.0000.07\RAPID\TASK3\PROGMOD\MainModule.mod" src=".\Source\RAPID\TASK3\PROGMOD\MainModule.mod" />
+        <file dest="ZhongXun_1.00.0000.07\tps\icon_ZhongXun.png" src=".\Source\tps\icon_ZhongXun.png" />
+        <file dest="ZhongXun_1.00.0000.07\tps\TpsViewZhongXun.dll" src=".\Source\tps\TpsViewZhongXun.dll" />
+        <file dest="ZhongXun_1.00.0000.07\tps\TpsViewZhongXunTexts.dll" src=".\Source\tps\TpsViewZhongXunTexts.dll" />
+        <file dest="ZhongXun_1.00.0000.07\install.cmd" src=".\Source\install.cmd" />
       </files>
     </payload>
   </res>
