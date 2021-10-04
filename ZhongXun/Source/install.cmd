@@ -106,10 +106,12 @@ config -filename $BOOTPATH/config/EIO_Virtual.cfg -domain EIO -replace
 config -filename $BOOTPATH/config/PROC_Virtual.cfg -domain PROC -replace
 
 config -filename $BOOTPATH/config/EIO_PN_Internal_Device_107895.cfg -domain EIO -replace
-config -filename $BOOTPATH/config/SIO_PN_Internal_Device.cfg -domain SIO -replace
+config -filename $BOOTPATH/config/SIO_PN_Internal_Device_107895.cfg -domain SIO -replace
 
 config -filename $BOOTPATH/config/EIO_FroniusSmarTac_107895.cfg -domain EIO -replace
 config -filename $BOOTPATH/config/PROC_FroniusSmarTac.cfg -domain PROC -replace
+
+config -filename $BOOTPATH/config/EIO_DN_Internal_Device.cfg -domain EIO -replace
 
 config -filename $BOOTPATH/config/SYS.cfg -domain SYS -replace
 #NEXT
@@ -130,10 +132,12 @@ config -filename $BOOTPATH/config/EIO_Virtual.cfg -domain EIO -replace
 config -filename $BOOTPATH/config/PROC_Virtual.cfg -domain PROC -replace
 
 config -filename $BOOTPATH/config/EIO_PN_Internal_Device_107896.cfg -domain EIO -replace
-config -filename $BOOTPATH/config/SIO_PN_Internal_Device.cfg -domain SIO -replace
+config -filename $BOOTPATH/config/SIO_PN_Internal_Device_107896.cfg -domain SIO -replace
 
 config -filename $BOOTPATH/config/EIO_FroniusSmarTac_107896.cfg -domain EIO -replace
 config -filename $BOOTPATH/config/PROC_FroniusSmarTac.cfg -domain PROC -replace
+
+config -filename $BOOTPATH/config/EIO_DN_Internal_Device.cfg -domain EIO -replace
 
 config -filename $BOOTPATH/config/SYS.cfg -domain SYS -replace
 #NEXT

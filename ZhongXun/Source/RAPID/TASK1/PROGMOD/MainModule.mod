@@ -8,8 +8,14 @@ MODULE MainModule
     !*****************************************************
 
     PROC main()
+        speedAir:=v200;
+        speedAproach:=v200;
         SaveModule;
         !InhibWeld FALSE\Weld\Weave\Track;
+        IF OpMode()=OP_AUTO THEN
+            !Switch Job mode to PLC mode when the robot is at Auto Mode
+            numJobMode:=3;
+        ENDIF
         ExecEngine;
     ENDPROC
 
