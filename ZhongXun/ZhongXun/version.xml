@@ -2,10 +2,10 @@
   <Major>1</Major>
   <Minor>0</Minor>
   <Build>0</Build>
-  <Revision>10</Revision>
-  <VersionName>1.0.10</VersionName>
+  <Revision>17</Revision>
+  <VersionName>1.0.17</VersionName>
   <Title>ZhongXun</Title>
   <Description>ZhongXun AddIn</Description>
-  <Date>2021-10-04</Date>
+  <Date>2021-10-05</Date>
   <Type>AdditionalOption</Type>
 </Version>

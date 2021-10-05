@@ -10,6 +10,7 @@ MODULE MainModule
     PROC main()
         speedAir:=v200;
         speedAproach:=v200;
+        numGantryCollisionDistance:=2000;
         SaveModule;
         !InhibWeld FALSE\Weld\Weave\Track;
         IF OpMode()=OP_AUTO THEN

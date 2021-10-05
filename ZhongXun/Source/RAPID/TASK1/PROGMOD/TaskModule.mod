@@ -31,10 +31,10 @@ MODULE TaskModule
 
     PERS string strTemplateList{40}:=["10014","10023","20014","20023","30014","30023","40014","40023","50014","50023","60014","60023","70014","70023","80014","80023","90014","90023","100014","100023","510001","","","","","","","","","","","","","","","","","","",""];
 
-    PERS jointtarget jointReadyQuadrant1:=[[60,-75,-15,0,90,-90],[800,500,-440,9E+09,9E+09,9E+09]];
-    PERS jointtarget jointReadyQuadrant2:=[[-60,-75,-15,0,90,90],[-800,500,-440,9E+09,9E+09,9E+09]];
-    PERS jointtarget jointReadyQuadrant3:=[[-120,-75,-15,0,90,-90],[-800,-500,-440,9E+09,9E+09,9E+09]];
-    PERS jointtarget jointReadyQuadrant4:=[[120,-75,-15,0,90,90],[800,-500,-440,9E+09,9E+09,9E+09]];
+    PERS jointtarget jointReadyQuadrant1:=[[60,-75,-15,0,90,-90],[800,500,-720,9E+09,9E+09,9E+09]];
+    PERS jointtarget jointReadyQuadrant2:=[[-60,-75,-15,0,90,90],[-800,500,-720,9E+09,9E+09,9E+09]];
+    PERS jointtarget jointReadyQuadrant3:=[[-120,-75,-15,0,90,-90],[-800,-500,-720,9E+09,9E+09,9E+09]];
+    PERS jointtarget jointReadyQuadrant4:=[[120,-75,-15,0,90,90],[800,-500,-720,9E+09,9E+09,9E+09]];
 
     PERS bool boolDebugMode:=FALSE;
     PERS bool boolEnableGantryOffset:=TRUE;
@@ -44,5 +44,6 @@ MODULE TaskModule
     PERS num numWaitTimeForLaser:=0;
     PERS num numAproachRelToolZ:=-50;
 
+    PERS num numGantryCollisionDistance:=-1;
 
 ENDMODULE

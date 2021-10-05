@@ -147,7 +147,8 @@ MODULE TestModule
     PROC MoveLaserToGanrtyBaseXZ()
         jointCurrent:=CJointT();
         jointLaserPlaneXZ.extax.eax_a:=jointCurrent.extax.eax_a;
-        MoveAbsJ jointLaserPlaneXZ,speedAir,fine,toolWeldGun\WObj:=wobj0;
+        MoveAbsJ jointLaserPlaneXZ, speedAir, fine, toolLaser\WObj:=wobj0;
+        Laser_Initialize;
         LASER_ON;
         Stop;
     ENDPROC

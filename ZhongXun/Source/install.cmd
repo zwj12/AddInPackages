@@ -62,6 +62,7 @@ copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/MainModule.mod -to $HOME/RAATCfg/RAPID/
 copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/ProcessDataModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/ProcessDataModule.mod
 copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/TaskModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/TaskModule.mod
 copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/TestModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/TestModule.mod
+copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/ServiceModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/ServiceModule.mod
 copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/SmarTacTestModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/SmarTacTestModule.mod
 copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/WeldTestModule.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/WeldTestModule.mod
 copy -from $BOOTPATH/RAPID/TASK1/PROGMOD/TestAutoCal.mod -to $HOME/RAATCfg/RAPID/TASK1/PROGMOD/TestAutoCal.mod
@@ -111,7 +112,9 @@ config -filename $BOOTPATH/config/SIO_PN_Internal_Device_107895.cfg -domain SIO 
 config -filename $BOOTPATH/config/EIO_FroniusSmarTac_107895.cfg -domain EIO -replace
 config -filename $BOOTPATH/config/PROC_FroniusSmarTac.cfg -domain PROC -replace
 
-config -filename $BOOTPATH/config/EIO_DN_Internal_Device.cfg -domain EIO -replace
+config -filename $BOOTPATH/config/EIO_DN_107895.cfg -domain EIO -replace
+
+config -filename $BOOTPATH/config/PROC_TorchServices.cfg -domain PROC -replace
 
 config -filename $BOOTPATH/config/SYS.cfg -domain SYS -replace
 #NEXT
@@ -137,7 +140,9 @@ config -filename $BOOTPATH/config/SIO_PN_Internal_Device_107896.cfg -domain SIO 
 config -filename $BOOTPATH/config/EIO_FroniusSmarTac_107896.cfg -domain EIO -replace
 config -filename $BOOTPATH/config/PROC_FroniusSmarTac.cfg -domain PROC -replace
 
-config -filename $BOOTPATH/config/EIO_DN_Internal_Device.cfg -domain EIO -replace
+config -filename $BOOTPATH/config/EIO_DN_107896.cfg -domain EIO -replace
+
+config -filename $BOOTPATH/config/PROC_TorchServices.cfg -domain PROC -replace
 
 config -filename $BOOTPATH/config/SYS.cfg -domain SYS -replace
 #NEXT
