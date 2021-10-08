@@ -92,7 +92,7 @@ copy -from $BOOTPATH/config/ProductionSetup_ZHONGXUN.xml -to $HOME/ProdScr/confi
 
 # Load configuration files
 getkey -id "ROBOT107895" -strvar $ANSWER -errlabel NEXT
-config -filename $BOOTPATH/config/MOC_GantryXYZ_MU433_M789DM1.cfg -domain MOC -replace
+config -filename $BOOTPATH/config/MOC_GantryXYZ_MU433_M789DM1_107895.cfg -domain MOC -replace
 config -filename $BOOTPATH/config/mocMoutIRB140_0.81_6.cfg -domain MOC -replace
 
 config -filename $BOOTPATH/config/EIO_Virtual_ProductionManager.cfg -domain EIO -replace

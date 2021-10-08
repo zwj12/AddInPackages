@@ -21,6 +21,7 @@ MODULE ServiceModule
     TASK PERS jointtarget jointCutApproach:=[[0,0,0,0,0,0],[0,0,0,9E+09,9E+09,9E+09]];
     TASK PERS jointtarget jointCut:=[[0,0,0,0,0,0],[0,0,0,9E+09,9E+09,9E+09]];
 
+    TASK PERS num numTorchCleanOffsetZ:=-50;
     TASK PERS num numTorchCleanTime:=3;
     TASK PERS num numTorchSprayime:=2;
     TASK PERS num numTorchCutTime:=1;
@@ -42,6 +43,13 @@ MODULE ServiceModule
         jointCutApproach.extax.eax_a:=jointCurrent.extax.eax_a;
         jointCut.extax.eax_a:=jointCurrent.extax.eax_a;
 
+
+        MoveAbsJ jointCutApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
+        MoveAbsJ jointCut,speedAir,fine,toolWeldGun\WObj:=wobj0;
+        SetDO doTS1_CutterSt,1;
+        WaitTime numTorchCutTime;
+        SetDO doTS1_CutterSt,0;
+
         MoveAbsJ jointMechCleanApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
         MoveAbsJ jointMechClean,speedAir,fine,toolWeldGun\WObj:=wobj0;
         SetDO doTS1_St,1;
@@ -56,15 +64,66 @@ MODULE ServiceModule
         WaitTime numTorchSprayime;
         SetDO doTS1_SpOn,0;
         MoveAbsJ jointSprayApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
-
-        MoveAbsJ jointCutApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
-        MoveAbsJ jointCut,speedAir,fine,toolWeldGun\WObj:=wobj0;
-        SetDO doTS1_CutterSt,1;
-        WaitTime numTorchCutTime;
-        SetDO doTS1_CutterSt,0;
         MoveAbsJ jointCutApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
 
         Logging\INFO,"TorchServicesByMoveAbsJ has been done!";
+
+    UNDO
+        SetDO doTS1_St,0;
+        SetDO doTS1_SpOn,0;
+        SetDO doTS1_CutterSt,0;
+    ENDPROC
+
+
+    PROC TorchServicesByMoveL()
+        jointCurrent:=CJointT();
+
+        rtMechCleanApproach.trans.x:=rtMechCleanApproach.trans.x+rtMechCleanApproach.extax.eax_a-jointCurrent.extax.eax_a;
+        rtMechClean.trans.x:=rtMechClean.trans.x+rtMechClean.extax.eax_a-jointCurrent.extax.eax_a;
+
+        rtSprayApproach.trans.x:=rtSprayApproach.trans.x+rtSprayApproach.extax.eax_a-jointCurrent.extax.eax_a;
+        rtSpray.trans.x:=rtSpray.trans.x+rtSpray.extax.eax_a-jointCurrent.extax.eax_a;
+
+        rtCutApproach.trans.x:=rtCutApproach.trans.x+rtCutApproach.extax.eax_a-jointCurrent.extax.eax_a;
+        rtCut.trans.x:=rtCut.trans.x+rtCut.extax.eax_a-jointCurrent.extax.eax_a;
+
+        rtMechCleanApproach.extax.eax_a:=jointCurrent.extax.eax_a;
+        rtMechClean.extax.eax_a:=jointCurrent.extax.eax_a;
+        rtSprayApproach.extax.eax_a:=jointCurrent.extax.eax_a;
+        rtSpray.extax.eax_a:=jointCurrent.extax.eax_a;
+        rtCutApproach.extax.eax_a:=jointCurrent.extax.eax_a;
+        rtCut.extax.eax_a:=jointCurrent.extax.eax_a;
+
+
+        MoveJ rtCutApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
+        MoveL RelTool(rtCut,0,0,numTorchCleanOffsetZ),speedAproach,zoneAproach,toolWeldGun\WObj:=wobj0;
+        MoveL rtCut,speedAproach,fine,toolWeldGun\WObj:=wobj0;
+        SetDO doTS1_CutterSt,1;
+        WaitTime numTorchCutTime;
+        SetDO doTS1_CutterSt,0;
+        MoveL RelTool(rtCut,0,0,numTorchCleanOffsetZ),speedAproach,zoneAproach,toolWeldGun\WObj:=wobj0;
+        MoveJ rtCutApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
+
+        MoveJ rtMechCleanApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
+        MoveL RelTool(rtMechClean,0,0,numTorchCleanOffsetZ),speedAproach,zoneAproach,toolWeldGun\WObj:=wobj0;
+        MoveL rtMechClean,speedAproach,fine,toolWeldGun\WObj:=wobj0;
+        SetDO doTS1_St,1;
+        WaitTime numTorchCleanTime;
+        SetDO doTS1_St,0;
+        WaitTime numTorchCleanTime;
+        MoveL RelTool(rtMechClean,0,0,numTorchCleanOffsetZ),speedAproach,zoneAproach,toolWeldGun\WObj:=wobj0;
+        MoveJ rtMechCleanApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
+
+        MoveJ rtSprayApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
+        MoveL RelTool(rtSpray,0,0,numTorchCleanOffsetZ),speedAproach,zoneAproach,toolWeldGun\WObj:=wobj0;
+        MoveL rtSpray,speedAproach,fine,toolWeldGun\WObj:=wobj0;
+        SetDO doTS1_SpOn,1;
+        WaitTime numTorchSprayime;
+        SetDO doTS1_SpOn,0;
+        MoveL RelTool(rtSpray,0,0,numTorchCleanOffsetZ),speedAproach,zoneAproach,toolWeldGun\WObj:=wobj0;
+        MoveJ rtSprayApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
+
+        Logging\INFO,"TorchServices has been done!";
 
     UNDO
         SetDO doTS1_St,0;
@@ -90,7 +149,11 @@ MODULE ServiceModule
         rtSpray.extax.eax_a:=jointCurrent.extax.eax_a;
         rtCutApproach.extax.eax_a:=jointCurrent.extax.eax_a;
         rtCut.extax.eax_a:=jointCurrent.extax.eax_a;
-        
+
+
+        MoveJ rtCutApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
+        MoveWireCutJ rtCutApproach,rtCut,speedAproach,fine,toolWeldGun\WObj:=wobj0;
+        MoveJ rtCutApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
 
         MoveJ rtMechCleanApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
         MoveMechCleanJ rtMechCleanApproach,rtMechClean,speedAproach,fine,toolWeldGun\WObj:=wobj0;
@@ -99,10 +162,6 @@ MODULE ServiceModule
         MoveJ rtSprayApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
         MoveSprayJ rtSprayApproach,rtSpray,speedAproach,fine,toolWeldGun\WObj:=wobj0;
         MoveJ rtSprayApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
-
-        MoveJ rtCutApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
-        MoveWireCutJ rtCutApproach,rtCut,speedAproach,fine,toolWeldGun\WObj:=wobj0;
-        MoveJ rtCutApproach,speedAir,zoneAir,toolWeldGun\WObj:=wobj0;
 
         Logging\INFO,"TorchServices has been done!";
     ENDPROC

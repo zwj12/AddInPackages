@@ -40,6 +40,10 @@ MODULE MainModule
     ENDPROC
 
     PROC CollisionAvoidanceGantry()
+        IF numGantryCollisionDistance=-1 THEN
+            SetDO sdoGantryCollision,0;
+            RETURN ;
+        ENDIF
         IF IOUnitState(strDeviceName\Phys)<>IOUNIT_PHYS_STATE_RUNNING OR ValidIO(aoDNGantryX)=FALSE THEN
             SetDO sdoGantryCollision,1;
             RETURN ;
