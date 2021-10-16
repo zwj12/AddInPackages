@@ -237,7 +237,10 @@ MODULE CalibDataModule
         Save\TaskName:="T_ROB1","ProcessDataModule"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/ProcessDataModule.mod";
         Save\TaskName:="T_ROB1","JobWeldModule"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/JobWeldModule.mod";
         Save\TaskName:="T_ROB1","YAMLModule"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/YAMLModule.mod";
+        Save\TaskName:="T_ROB1","ServiceModule"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/ServiceModule.mod";
 
+        Save\TaskName:="T_ROB1","BE_User"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/SYSMOD/BE_User.sys";
+        
         Save\TaskName:="T_ROB1","AutoCal2"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/SYSMOD/AutoCal2.sys";
         Save\TaskName:="T_ROB1","AutoCal2b"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/SYSMOD/AutoCal2b.sys";
         Save\TaskName:="T_ROB1","CommSF"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/SYSMOD/CommSF.sys";
@@ -247,15 +250,6 @@ MODULE CalibDataModule
         Save\TaskName:="T_ROB1","WeldTestModule"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/WeldTestModule.mod";
         Save\TaskName:="T_ROB1","SmarTacTestModule"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/SmarTacTestModule.mod";
         Save\TaskName:="T_ROB1","TestModule"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/TestModule.mod";
-
-        Save\TaskName:="T_ROB1","Template_10014_Module"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/Template_10014_Module.mod";
-        Save\TaskName:="T_ROB1","Template_10023_Module"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/Template_10023_Module.mod";
-        Save\TaskName:="T_ROB1","Template_20014_Module"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/Template_20014_Module.mod";
-        Save\TaskName:="T_ROB1","Template_20023_Module"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/Template_20023_Module.mod";
-        Save\TaskName:="T_ROB1","Template_30014_Module"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/Template_30014_Module.mod";
-        Save\TaskName:="T_ROB1","Template_30023_Module"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/Template_30023_Module.mod";
-        Save\TaskName:="T_ROB1","Template_40014_Module"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/Template_40014_Module.mod";
-        Save\TaskName:="T_ROB1","Template_40023_Module"\FilePath:="HOME:/RAATCfg/RAPID/TASK1/PROGMOD/Template_40023_Module.mod";
 
         Save\TaskName:="T_Background","MainModule"\FilePath:="HOME:/RAATCfg/RAPID/TASK3/PROGMOD/MainModule.mod";
 
