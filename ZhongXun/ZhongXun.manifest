@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProductManifest version="1.1">
-  <Product id="open.jyweld.zhongxun" name="ZhongXun" version="1.00.0000.23" versionName="1.0.23" creationDate="2021-12-19" publisher="JYWeld" type="AddIn" copyright="Copyright 2021 JYWeld. All rights reserved." companyUrl="www.shzhongxun.com">
+  <Product id="open.jyweld.zhongxun" name="ZhongXun" version="1.00.0000.24" versionName="1.0.24" creationDate="2021-12-25" publisher="JYWeld" type="AddIn" copyright="Copyright 2021 JYWeld. All rights reserved." companyUrl="www.shzhongxun.com">
     <Description>ZhongXun AddIn</Description>
   </Product>
   <Categories>
@@ -36,10 +36,10 @@
   </Rules>
   <Packages>
     <FeatureRef id="open.jyweld.zhongxun.robot107895">
-      <Package id="open.jyweld.zhongxun_1.00.0000.23.rpk" platform="vc;rc;rcsim" />
+      <Package id="open.jyweld.zhongxun_1.00.0000.24.rpk" platform="vc;rc;rcsim" />
     </FeatureRef>
     <FeatureRef id="open.jyweld.zhongxun.robot107896">
-      <Package id="open.jyweld.zhongxun_1.00.0000.23.rpk" platform="vc;rc;rcsim" />
+      <Package id="open.jyweld.zhongxun_1.00.0000.24.rpk" platform="vc;rc;rcsim" />
     </FeatureRef>
   </Packages>
 </ProductManifest>
